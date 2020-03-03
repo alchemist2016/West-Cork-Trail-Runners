@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% block content %}
+<body background="{{ url_for('static', filename='img/group.jpg') }}">
+<h3 style="text-align: center">Add Trail</h3>
+<div class="container">       
+	<div class="row">
+		<form action="{{ url_for('insert_trail') }}" method="POST" class="col s12">
+			<div class="row">
+				<div class="input-field col s12">
+					<i class="material-icons prefix">forward</i>
+					<input placeholder="Placeholder" id="name_of_trail" name="name_of_trail" type="text" class="validate">
+					<label for="icon prefix">Trail Name</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s12">
+                <i class="material-icons prefix">gps_not_fixed</i>
+					<input id="start" name="start" type="text" class="validate">
+					<label for="icon prefix">Starting Place</label>
+				</div>
+			</div>
+            <div class="row">
+				<div class="input-field col s12">
+                <i class="material-icons prefix">gps_fixed</i>
+					<input id="end" name="end" type="text" class="validate">
+					<label for="icon prefix">Ending Place</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s12">
+					<i class="material-icons prefix">directions_run</i>
+					<input id="description" name="description" type="text" class="validate">
+					<label for="icon prefix">Description</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s12">
+					<i class="material-icons prefix">assessment</i>
+					<input id="dificulty" name="dificulty" type="text" class="validate">
+					<label for="icon_prefix">Dificulty</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s12">
+					<i class="material-icons prefix">access_time</i>
+					<input id="length" name="length" type="text" class="validate">
+					<label for="icon_prefix">Length</label>
+				</div>
+			</div>
+                <div class="row">
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Add Trail
+                        <i class="material-icons right">playlist_add</i>
+                    </button>
+                </div>
+            </form>
+	    </div>
+	
+</div>
+{% endblock %}
