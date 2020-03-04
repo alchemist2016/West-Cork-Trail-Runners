@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
-<body background="{{ url_for('static', filename='img/group.jpg') }}">
+<body background="{{ url_for('static', filename='img/forest_trail.jpg') }}">
 <h3 style="text-align: center">Add Trail</h3>
 <div class="container">       
 	<div class="row">
@@ -8,7 +8,7 @@
 			<div class="row">
 				<div class="input-field col s12">
 					<i class="material-icons prefix">forward</i>
-					<input placeholder="Placeholder" id="name_of_trail" name="name_of_trail" type="text" class="validate">
+					<input id="name_of_trail" name="name_of_trail" type="text" class="validate">
 					<label for="icon prefix">Trail Name</label>
 				</div>
 			</div>
