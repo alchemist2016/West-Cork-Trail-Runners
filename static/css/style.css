@@ -22,6 +22,7 @@ body,html {
 
 .task-header {
     margin-top: 5px;
+    color: black;
 }
 #trails {
     text-align: center;
