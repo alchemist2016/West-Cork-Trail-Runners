@@ -12,19 +12,24 @@ body,html {
     height: 100%;
 }
 /*--Formatting for Edit and Delete Buttons in Forms--*/
-.btn_small {
+.btn-small {
     height: 24px;
-    width: 60px;
+    width: 70px;
     line-height: 24px;
     margin: 5px 5px;
     padding: 0 0.5em;
 }
 
-.task-header {
-    margin-top: 5px;
+.material-icons {
+    text-rendering: optimizeLegibility;
+    font-feature-settings: 'liga';
     color: black;
 }
-/*---GetTrails---*/
+.task-header h5 {
+    color: black;
+    margin: 0 auto;
+}
+/*---GetTrails/GetMembers---*/
 #trails {
     text-align: center;
 }
@@ -32,7 +37,7 @@ body,html {
     text-align: center;
     margin-left: 40px;
     color: black;
-}
+}}
 .btn, .btn-large {
     text-decoration: none;
     color: #fff;

@@ -5,28 +5,30 @@
 	{% for member in members %}
 	<li>
 		<div class="collapsible-header" id="form-member-color">
-			<div class="col s3">
+			<div class="col s3 center-align">
 				<i class="material-icons">expand_more</i>
 				<a href="{{url_for('edit_member', member_id=member._id)}}"class="waves-effect waves-light btn btn-small">Edit</a>
                 <a href="{{url_for('delete_member', member_id=member._id)}}" class="waves-effect waves-light btn btn-small red">Delete</a>
 			</div>
 			<div class="task-header col s9 center-align">
-				<strong>{{member.first_name}}</strong>
+				<h5><strong>{{member.first_name}} {{member.last_name}}</strong></h5>
 			</div>
 		</div>
-		<div class="collapsible-body">
-			<span>
-                {{member.first_name}}
-                <br>
-                {{member.last_name}}
-                <br>
-                {{member.running_experience}}
-                <br>
-                {{member.email}}
-                <br>
-                {{member.date_joined}}
-            </span>
-		</div>
+               <div class="collapsible-body">
+                <span>
+                <ul>
+                <li><strong>First Name: </strong>{{member.first_name}}</li>
+                    <br>
+                    <li><strong>Last Name: </strong>{{member.last_name}}</li>
+                    <br>
+                    <li><strong>Running Experience: </strong>{{member.running_experience}}</li>
+                    <br>
+                    <li><strong>Email: </strong>{{member.email}}</li>
+                    <br>
+                    <li><strong>Date Joined: </strong>{{member.date_joined}}</li>
+                    </ul>
+                </span>
+            </div>
 	</li>
 	{% endfor %}
 </ul>
