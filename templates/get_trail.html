@@ -12,20 +12,22 @@
                 <a href="{{url_for('delete_trail', trail_id=trail._id)}}" class="waves-effect waves-light btn btn-small red">Delete</a>
 			</div>
 			<div class="task-header col s9 center-align">
-                    <p><strong>{{trail.name_of_trail}}</strong></p>
+                    <h5><strong>{{trail.name_of_trail}}</strong></h5>
                 </div>
             </div>
             <div class="collapsible-body">
                 <span>
-                    {{trail.start}}
+                <ul>
+                <li><strong>Start Point: </strong>{{ trail.start}}</li>
                     <br>
-                    {{trail.end}}
+                    <li><strong>End Point: </strong>{{ trail.end}}</li>
                     <br>
-                    {{trail.description}}
+                    <li><strong>Description: </strong>{{ trail.description}}</li>
                     <br>
-                    {{trail.dificulty}}
+                    <li><strong>Dificulty: </strong>{{ trail.dificulty}}</li>
                     <br>
-                    {{trail.length}}
+                    <li><strong>Length: </strong>{{ trail.length}}</li>
+                    </ul>
                 </span>
             </div>
         </li>

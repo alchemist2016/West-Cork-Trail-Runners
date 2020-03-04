@@ -24,6 +24,7 @@ body,html {
     margin-top: 5px;
     color: black;
 }
+/*---GetTrails---*/
 #trails {
     text-align: center;
 }
@@ -32,6 +33,14 @@ body,html {
     margin-left: 40px;
     color: black;
 }
+.btn, .btn-large {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    letter-spacing: .5px;
+    margin-top: 10px;
+}
+
 @media only screen and (min-width: 0)
 html {
  font-size: 34px;
@@ -57,4 +66,23 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
     margin-right: -.75rem;
     background: aliceblue;
     color: black;
+}
+
+/*---Home---*/
+.teal.lighten-2 {
+    background-color: #4db6ac !important;
+    color: white;
+    margin-top: 20vh;
+}
+
+/*---base.html---footer*/
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #ee6e73;
+  color: white;
+  text-align: center;
+  height: 70px;
 }
