@@ -8,43 +8,43 @@
 			<div class="row">
 				<div class="input-field col s12">
 					<i class="material-icons prefix">forward</i>
-					<input id="name_of_trail" name="name_of_trail" type="text" class="validate">
+					<input id="name_of_trail" name="name_of_trail" type="text" class="validate" required>
 					<label for="icon prefix">Trail Name</label>
 				</div>
 			</div>
 			<div class="row">
 				<div class="input-field col s12">
                 <i class="material-icons prefix">gps_not_fixed</i>
-					<input id="start" name="start" type="text" class="validate">
+					<input id="start" name="start" type="text" class="validate" required>
 					<label for="icon prefix">Starting Place</label>
 				</div>
 			</div>
             <div class="row">
 				<div class="input-field col s12">
                 <i class="material-icons prefix">gps_fixed</i>
-					<input id="end" name="end" type="text" class="validate">
+					<input id="end" name="end" type="text" class="validate" required>
 					<label for="icon prefix">Ending Place</label>
 				</div>
 			</div>
 			<div class="row">
 				<div class="input-field col s12">
 					<i class="material-icons prefix">directions_run</i>
-					<input id="description" name="description" type="text" class="validate">
+					<input id="description" name="description" type="text" class="validate" required>
 					<label for="icon prefix">Description</label>
 				</div>
 			</div>
 			<div class="row">
 				<div class="input-field col s12">
 					<i class="material-icons prefix">assessment</i>
-					<input id="dificulty" name="dificulty" type="text" class="validate">
+					<input id="dificulty" name="dificulty" type="text" class="validate" required>
 					<label for="icon_prefix">Dificulty</label>
 				</div>
 			</div>
 			<div class="row">
 				<div class="input-field col s12">
 					<i class="material-icons prefix">access_time</i>
-					<input id="length" name="length" type="text" class="validate">
-					<label for="icon_prefix">Length</label>
+					<input id="length" name="length" type="number" class="validate"  min="1" max="200" required>
+					<label for="icon_prefix" id="verify">Length</label>
 				</div>
 			</div>
                 <div class="row">
