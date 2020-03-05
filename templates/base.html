@@ -1,11 +1,12 @@
 <html>
-
 <head>
+    <title>West Cork Trail Runners</title>
+
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" />
-    <link rel="stylesheet" href="{{url_for('static', filename='js/script.js')}}"/>
+	<link rel="stylesheet" href="{{url_for('static', filename='js/script.js')}}" />
 </head>
 
 <body>
@@ -37,7 +38,7 @@
 		{% endblock %}
 	</div>
 	<div class="footer">
-    <h5 class="footer-title">Visit us on Facebook</h5>
+		<h5 class="footer-title">Visit us on Facebook</h5>
 		<a href="https://www.facebook.com/groups/1328420757249671/" class="fa fa-facebook" target="_blank"></a>
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -47,6 +48,7 @@
             $('.collapsible').collapsible();
             $('select').material_select();
             $(".button-collapse").sideNav();
+            $('.datepicker').datepicker();
         });
 
         $('.datepicker').pickadate({
@@ -57,6 +59,9 @@
             close: 'Ok',
             closeOnSelect: false // Close upon selecting a date,
         });
+         document.getElementById("matfix").addEventListener("click", function(e) {
+	    e.stopPropagation();
+         });
 	</script>
 </body>
 
