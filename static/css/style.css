@@ -6,19 +6,17 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-}
-body,html {
     width: 100%;
     height: 100%;
 }
 /*--Formatting for Edit and Delete Buttons in Forms--*/
-.btn-small {
+/* .btn-small {
     height: 24px;
     width: 70px;
     line-height: 24px;
     margin: 5px 5px;
     padding: 0 0.5em;
-}
+} */
 
 .material-icons {
     text-rendering: optimizeLegibility;
@@ -37,7 +35,7 @@ body,html {
     text-align: center;
     margin-left: 40px;
     color: black;
-}}
+}
 .btn, .btn-large {
     text-decoration: none;
     color: #fff;
@@ -46,22 +44,37 @@ body,html {
     margin-top: 10px;
 }
 /*---Nav Bar---*/
+nav ul a {
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+    font-size: 0.5rem;
+    color: #fff;
+    display: block;
+    padding: 0 5px;
+    cursor: pointer;
+}
+nav ul {
+    margin-top: 35px;
+}
+
 nav .brand-logo {
     position: absolute;
     color: #fff;
     display: inline-block;
-    font-size: 2.1rem;
+    font-size: 2rem;
     padding-left: 20px;
+    margin-top: 30px;
 }
 
 .side-nav li>a {
    color: rgba(0,0,0,0.87);
    display: block;
-   font-size: 30px;
-   font-weight: 500;
+   font-size: 40px;
+   font-weight: 400;
    height: 48px;
    line-height: 48px;
-   padding: 0 32px;
+   padding: 20px 32px;
+   margin-top: 20px;
 }
 /*--Add Trail--*/
 .container .row {
@@ -87,14 +100,13 @@ nav .brand-logo {
   background-color: #ee6e73;
   color: white;
   text-align: center;
-  height: 70px;
+  height: 150px;
 }
 .fa {
-    font-size: 30px;
-    width: 40px;
+    font-size: 60px;
+    width: 70px;
     text-align: center;
     text-decoration: none;
-    border-radius: 50%;
 }
 /* Add a hover effect if you want */
 .fa:hover {
@@ -110,13 +122,15 @@ nav .brand-logo {
 }
 
 /*--Responsive Design--*/
-@media only screen and (min-width: 0)
-html {
- font-size: 34px;
+@media only screen and (min-width: 0){
+    html {
+        font-size: 30px;
+    }
 }
-@media only screen and (min-width: 601px)
-nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-   height: 64px;
-   line-height: 64px;
-   font-size: larger;
+@media only screen and (min-width: 601px){
+    nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+    height: 160px;
+    line-height: 64px;
+    font-size: larger;
+    } 
 }

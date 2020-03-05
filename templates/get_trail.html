@@ -1,17 +1,17 @@
 {% extends 'base.html' %}
 {% block content %}
 <body background="{{ url_for('static', filename='img/mtb.jpg') }}">
-<h1 id="trails">Trails</h1>
+<h4 id="trails">Trails</h4>
     <ul class="collapsible" data-collapsible="accordion">
 	{% for trail in trails %}
 	<li>
 		<div class="collapsible-header" id="form-color">
-			<div class="col s3 center-align">
+			<div class="col s6">
 				<i class="material-icons">expand_more</i>
 				<a href="{{url_for('edit_trail', trail_id=trail._id)}}"class="waves-effect waves-light btn btn-small">Edit</a>
                 <a href="{{url_for('delete_trail', trail_id=trail._id)}}" class="waves-effect waves-light btn btn-small red">Delete</a>
 			</div>
-			<div class="task-header col s9 center-align">
+			<div class="task-header col s6 center-align">
                     <h5><strong>{{trail.name_of_trail}}</strong></h5>
                 </div>
             </div>
