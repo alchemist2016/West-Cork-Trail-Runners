@@ -137,6 +137,7 @@ nav .brand-logo {
     width: 70px;
     text-align: center;
     text-decoration: none;
+    margin-top: 10px;
 }
 /* Add a hover effect if you want */
 .fa:hover {
