@@ -94,7 +94,26 @@ nav .brand-logo {
     background: aliceblue;
     color: black;
 }
+/*-----Add Member------*/
+.form-size {
+    margin-bottom: 130px;
+}
 
+.waves-effect {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    z-index: auto;
+    -webkit-transition: .3s ease-out;
+    transition: .3s ease-out;
+}
 /*---Home---*/
 .teal.lighten-2 {
     background-color: #4db6ac !important;
