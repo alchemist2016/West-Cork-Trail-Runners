@@ -9,6 +9,7 @@ body {
     width: 100%;
     height: 100%;
 }
+
 /*--Formatting for Edit and Delete Buttons in Forms--*/
 .btn-small {
     line-height: 14px;
@@ -53,6 +54,11 @@ body {
     color: #fff;
     text-align: center;
     letter-spacing: .5px;
+}
+ul:not(.browser-default) {
+    padding-left: 0;
+    list-style-type: none;
+    font-size: 2rem;
 }
 /*---Nav Bar---*/
 nav ul a {
@@ -165,3 +171,26 @@ nav .brand-logo {
     font-size: larger;
     } 
 }
+
+@media only screen and (min-width: 0) {
+    ul:not(.browser-default)>li {
+        list-style-type: none;
+        font-size: 1rem;
+        line-height: 25px;
+    }
+}
+
+ @media only screen and (min-width: 768px) {
+    ul:not(.browser-default)>li {
+        list-style-type: none;
+        font-size: 1.5rem;
+        line-height: 40px;
+    }
+}
+ @media only screen and (min-width: 1024px) {
+    ul:not(.browser-default)>li {
+        list-style-type: none;
+        font-size: 0.9rem;
+        line-height: 25px;
+    }
+} 
