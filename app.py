@@ -88,6 +88,10 @@ def delete_member(member_id):
     mongo.db.member.remove({'_id': ObjectId(member_id)})
     return redirect(url_for('get_members'))
 
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),

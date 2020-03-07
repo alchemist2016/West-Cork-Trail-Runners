@@ -1,0 +1,26 @@
+{% extends 'base.html' %} {% block content %}
+
+<section class="about" id="contact-form">
+	<div class="container">
+		<div class="col-12">
+			<div class="alert alert-success">
+				<h5>Contact Us</h5>
+			</div>
+			<div class="signup-form">
+				<!-- EmailJS function -->
+				<form onsubmit="return sendMail(this);">
+					<label for="fullname">Full Name</label>
+					<input type="text" class="text-input" name="name" id="fullname"  required>
+					<label for="email">Email</label>
+					<input type="email" class="text-input" name="email" id="email" required>
+					<div class="form-group">
+						<label for="exampleFormControlTextarea3" >Send us Your Enquiries</label>
+						<textarea class="form-control text-input"  name="tour_request" id="exampleFormControlTextarea3" rows="7" required></textarea>
+					</div>
+					<button class="join-button" type="submit" value="Submit" >Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}

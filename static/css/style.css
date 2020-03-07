@@ -130,36 +130,43 @@ nav .brand-logo {
 
 
 /*---base.html---footer*/
-.footer {
-  position: fixed;
+footer {
+    position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #ee6e73;
-  color: white;
+  background-color:rgb(238, 110, 115);
+  color: rgb(8, 8, 8);
   text-align: center;
-  height: 150px;
+  height: 90px;
+  
 }
-.fa {
-    font-size: 60px;
-    width: 70px;
-    text-align: center;
-    text-decoration: none;
-    margin-top: 40px;
+footer ul li {
+    display: inline-block;
+    top: 20px;
+    padding-top: 20px;
+    padding-right: 40px;
+}
+#ul-links{
+    margin-top: 0px;
 }
 
-/* Add a hover effect if you want */
-.fa:hover {
-  opacity: 0.7;
+.social-links li a i {
+    width: 50px;
+    height: 50px;
+    padding:12px 0;
+    border-radius: 50%;
+    font-size: 30px;
+    text-align: center;
+    color: #fafafa;
+    background: #8f8f8f;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
 }
-/* Facebook */
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-}
-.footer-title{
-    margin: 0;
-}
+
+
 
 /*--Responsive Design--*/
 @media only screen and (min-width: 0){
@@ -213,3 +220,129 @@ nav .brand-logo {
         line-height: 25px;
     }
 } 
+
+/* Style The Dropdown Button */
+.dropbtn {
+  background-color: #4db6ac;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-top: 35px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 105px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 10px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    margin-top: 0;
+}
+
+.dropdown-content {
+    margin: 0;
+    max-height: 650px;
+    overflow-y: auto;
+    opacity: 1;
+    will-change: width, height;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 211px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #4db6ac;
+}
+/* Contact Us */
+
+.form-control {
+    display: block;
+    width: 50%;
+    height: 100px;  
+}
+
+.signup-form{
+  margin-top: 50px;
+  color: white;
+  max-width: 100%;
+  padding-bottom: 100px; 
+ 
+}
+.form-group {
+    margin-bottom: 40px;
+}
+.signup-form  h2 {
+color: rgb(8, 8, 8);
+  margin-bottom: 100px;
+  padding-top: 20px;
+}
+form.signup-form {
+    margin-left: 15%;
+}
+.signup-form p {
+    font-size: 25px;
+}
+.text-input{
+  color:white;
+  width: 100%;
+  font-weight: normal;
+  margin: 5px 0 20px 0;
+  border: 1px solid  white;
+  border-radius: 2px;
+  height: 2rem;
+  
+}
+
+label {
+    font-size: .8rem;
+    color: white;
+}
+.join-button{
+  margin-top: 20px;
+  border-radius: 50%;
+  padding: 15px 32px 15px 32px;
+  text-align: center;
+  font-size: 100%;
+  background-color: rgb(14, 107, 7);
+  color:white;
+  display: block;
+  
+}
+
+.join-button:hover{
+  background-color: yellow;
+  color: black;
+}
