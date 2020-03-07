@@ -178,7 +178,7 @@ footer ul li {
     nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
     height: 160px;
     line-height: 64px;
-    font-size: 1rem;
+    font-size: 3rem;
     } 
 }
 @media only screen and (min-width: 1024px){
