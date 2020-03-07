@@ -322,27 +322,21 @@ form.signup-form {
   margin: 5px 0 20px 0;
   border: 1px solid  white;
   border-radius: 2px;
-  height: 2rem;
+  height: 5rem;
   
 }
 
 label {
-    font-size: .8rem;
+    font-size: 1.5rem;
     color: white;
 }
 .join-button{
   margin-top: 20px;
-  border-radius: 50%;
   padding: 15px 32px 15px 32px;
   text-align: center;
   font-size: 100%;
-  background-color: rgb(14, 107, 7);
+  background-color:#4db6ac;
   color:white;
   display: block;
   
-}
-
-.join-button:hover{
-  background-color: yellow;
-  color: black;
 }

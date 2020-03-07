@@ -7,15 +7,12 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" />
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js">
-	</script>
-	<script type="text/javascript">
-		(function(){
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
       emailjs.init("user_EXKocjTx1yahCHXq0tzvV");
    })();
-	</script>
-
-
+</script>
 </head>
 
 <body>
@@ -66,15 +63,11 @@
 		</footer>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-		<link rel="stylesheet" href="{{url_for('static', filename='js/script.js')}}" />
-		<link rel="stylesheet" href="{{url_for('static', filename='js/sendEmail.js')}}" />
 		<script type="text/javascript">
 			$(document).ready(function() {
             $('.collapsible').collapsible();
             $('select').material_select();
-            $(".button-collapse").sideNav();
-            $('.datepicker').datepicker();
-            
+            $(".button-collapse").sideNav();   
         });
 
         $('.datepicker').pickadate({
@@ -85,10 +78,12 @@
             close: 'Ok',
             closeOnSelect: false // Close upon selecting a date,
         });
-         document.getElementById("matfix").addEventListener("click", function(e) {
+         document.getElementById("#matfix").addEventListener("click", function(e) {
 	    e.stopPropagation();
          });
 		</script>
+        <script src="{{url_for('static', filename='js/script.js')}}" ></script>
+		<script src="{{url_for('static', filename='js/sendEmail.js')}}"></script>
 </body>
 
 </html>
