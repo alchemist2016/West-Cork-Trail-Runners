@@ -1,6 +1,7 @@
 <html>
+
 <head>
-    <title>West Cork Trail Runners</title>
+	<title>West Cork Trail Runners</title>
 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
@@ -37,18 +38,19 @@
 		{% block content %}
 		{% endblock %}
 	</div>
-	<div class="footer">
-		<h5 class="footer-title">Visit us on Facebook</h5>
+	<div class="footer" >
 		<a href="https://www.facebook.com/groups/1328420757249671/" class="fa fa-facebook" target="_blank"></a>
-	</div>
+        </div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
 	<script type="text/javascript">
 		$(document).ready(function() {
             $('.collapsible').collapsible();
             $('select').material_select();
             $(".button-collapse").sideNav();
             $('.datepicker').datepicker();
+            
         });
 
         $('.datepicker').pickadate({

@@ -8,43 +8,43 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="material-icons prefix">forward</i>
-                        <input placeholder="Trail Name" id="name_of_trail" name="name_of_trail" type="text" class="validate" value="{{trail.name_of_trail}}">
+                        <input placeholder="Trail Name" id="name_of_trail" name="name_of_trail" type="text" class="validate" value="{{trail.name_of_trail}}" required>
                         <label for="icon prefix">Trail Name</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="material-icons prefix">gps_not_fixed</i>
-                        <input id="start" name="start" type="text" class="validate" value="{{trail.start}}">
+                        <input id="start" name="start" type="text" class="validate" value="{{trail.start}}" required>
                         <label for="icon prefix">Starting Place</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="material-icons prefix">gps_fixed</i>
-                        <input id="end" name="end" type="text" class="validate" value="{{trail.end}}">
+                        <input id="end" name="end" type="text" class="validate" value="{{trail.end}}" required>
                         <label for="icon prefix">Ending Place</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="material-icons prefix">directions_run</i>
-                        <input id="description" name="description" type="text" class="validate" value="{{trail.description}}">
+                        <input id="description" name="description" type="text" class="validate" value="{{trail.description}}" required>
                         <label for="icon prefix">Description</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="material-icons prefix">assessment</i>
-                        <input id="dificulty" name="dificulty" type="text" class="validate" value="{{trail.dificulty}}">
+                        <input id="dificulty" name="dificulty" type="text" class="validate" value="{{trail.dificulty}}" required>
                         <label for="icon_prefix">Dificulty</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="material-icons prefix">access_time</i>
-                        <input id="length" name="length" type="text" class="validate" value="{{trail.length}}">
-                        <label for="icon_prefix">Length</label>
+                        <input id="length" name="length" type="number" class="validate" min="1" max="200" required value="{{trail.length}}" required>
+                        <label for="icon_prefix" id="verify">Length</label>
                     </div>
                 </div>
                 <div class="row">
