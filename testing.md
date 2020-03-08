@@ -81,7 +81,7 @@ CRUD functionality is working as expected, no errors.
 | Clicking on Delete button | Deletes Member and data in DB | As Expected | Pass |
 
 
-### Update Trail
+### Update Member
 
 | Functionality | Expected Outcome | Actual Outcome | Pass/Fail |
 | :-------------: |:----------------:| :--------------: | :---------: |
@@ -89,7 +89,7 @@ CRUD functionality is working as expected, no errors.
 | Running `Add Member` button without filling out the form | Prompts the user to fill out the fields | As Expected | Pass |
 |Running `Add Member` button with form filled| Submits data and returns to Members page | As Expected | Pass |
 
-### Delete Trail
+### Delete Member
 
 | Functionality | Expected Outcome | Actual Outcome | Pass/Fail |
 | :-------------: |:----------------:| :--------------: | :---------: |
