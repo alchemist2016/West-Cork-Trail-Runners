@@ -3,7 +3,7 @@
 # West Cork Trail Runners
 Do you enjoy spending time in the nature? Do you love running and challenging yourself? Well we just might have the right thing for you. We are a small group of enthusiast who love running and open air. We have runners of all levels. The aim we are striving to is not who can run furthest or fastest but to share quality time together in a breathtaking scenery of West Cork and Kerry. Come join us on our next adventure!
 
-#### Click on the picture to see live demo!
+#### Click on the picture to see live app demo on Heroku!
 [![Demo](https://github.com/alchemist2016/Milestone3/blob/master/static/img/heroku.PNG?raw=true)](https://west-cork-trail-runners.herokuapp.com/)
 
 ---
@@ -44,7 +44,7 @@ There is much to say about this topic but my priorities were to present skills i
   - all members access and delete, edit existing members
 
 <p align="center">
-  <img src="https://github.com/alchemist2016/Milestone3/blob/master/static/img/members.PNG?raw=true" width="500" height="300" alt="Marketplace image">
+  <img src="https://github.com/alchemist2016/Milestone3/blob/master/static/img/members.PNG?raw=true" width="400" height="300" alt="Marketplace image">
 </p>
 
 * **see current trails**
