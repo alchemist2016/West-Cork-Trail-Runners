@@ -22,12 +22,14 @@ def home():
 @app.route('/get_trails')
 def get_trails():
     return render_template("get_trail.html",
-                            trails=mongo.db.trail_running.find())
+                           trails=mongo.db.trail_running.find())
+
 
 @app.route('/add_trail')
 def add_trail():
     return render_template('addtrail.html',
-            trails=mongo.db.trail_running.find())
+                           trails=mongo.db.trail_running.find())
+
 
 @app.route('/insert_trail', methods=['POST'])
 def insert_trail():
@@ -35,18 +37,21 @@ def insert_trail():
     trails.insert_one(request.form.to_dict())
     return redirect(url_for('get_trails'))
 
+
 @app.route('/edit_trail/<trail_id>')
 def edit_trail(trail_id):
     the_trail = mongo.db.trail_running.find_one({"_id": ObjectId(trail_id)})
     all_trails = mongo.db.trail_running.find()
     return render_template('edittrail.html', trail=the_trail, trails=all_trails)
 
+
 @app.route('/update_trail/<trail_id>', methods=['POST'])
 def update_trail(trail_id):
     trail = mongo.db.trail_running.find_one({"_id": ObjectId(trail_id)})
-    trails=mongo.db.trail_running
+    trails = mongo.db.trail_running
     trails.update({"_id": ObjectId(trail_id)}, request.form.to_dict())
     return redirect(url_for('get_trails'))
+
 
 @app.route('/delete_trail/<trail_id>')
 def delete_trail(trail_id):
@@ -57,18 +62,21 @@ def delete_trail(trail_id):
 @app.route('/get_members')
 def get_members():
     return render_template('get_members.html',
-                            members = mongo.db.member.find())
+                           members=mongo.db.member.find())
+
 
 @app.route('/add_members')
 def add_members():
     return render_template('add_member.html',
-                            members = mongo.db.member.find())
+                           members=mongo.db.member.find())
+
 
 @app.route('/insert_member', methods=['POST'])
 def insert_member():
-    members=mongo.db.member
+    members = mongo.db.member
     members.insert_one(request.form.to_dict())
     return redirect(url_for('get_members'))
+
 
 @app.route('/edit_member/<member_id>')
 def edit_member(member_id):
@@ -76,21 +84,25 @@ def edit_member(member_id):
     all_members = mongo.db.member.find()
     return render_template('editmember.html', member=the_member, members=all_members)
 
+
 @app.route('/update_member/<member_id>', methods=['POST'])
 def update_member(member_id):
     member = mongo.db.member.find_one({"_id": ObjectId(member_id)})
-    members=mongo.db.member
+    members = mongo.db.member
     members.update({"_id": ObjectId(member_id)}, request.form.to_dict())
     return redirect(url_for('get_members'))
+
 
 @app.route('/delete_member/<member_id>')
 def delete_member(member_id):
     mongo.db.member.remove({'_id': ObjectId(member_id)})
     return redirect(url_for('get_members'))
 
+
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
+    
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
