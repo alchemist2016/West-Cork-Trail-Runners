@@ -51,14 +51,14 @@ There is much to say about this topic but my priorities were to present skills i
   - access current trails and delete, edit them
   
 <p align="center">
-  <img src="https://github.com/alchemist2016/Milestone3/blob/master/static/img/trails.PNG?raw=true" width="600" height="300" alt="Trails">
+  <img src="https://github.com/alchemist2016/Milestone3/blob/master/static/img/trails.PNG?raw=true" width="400" height="300" alt="Trails">
 </p>
 
 * **User can Add New Members**
   - Adding new Members into DB 
 
 <p align="center">
-  <img src="https://github.com/alchemist2016/Milestone3/blob/master/static/img/addmember.PNG?raw=true" width="500" height="150" alt="Add new members">
+  <img src="https://github.com/alchemist2016/Milestone3/blob/master/static/img/addmember.PNG?raw=true" width="300" height="150" alt="Add new members">
 </p>
 
 * **User can Add New Trail**
