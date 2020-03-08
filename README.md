@@ -44,7 +44,7 @@ There is much to say about this topic but my priorities were to present skills i
   - all members access and delete, edit existing members
 
 <p align="center">
-  <img src="https://github.com/alchemist2016/Milestone3/blob/master/static/img/members.PNG?raw=true" width="500" height="300" alt="Marketplace image">
+  <img src="https://github.com/alchemist2016/Milestone3/blob/master/static/img/members.PNG?raw=true" width="400" height="300" alt="Marketplace image">
 </p>
 
 * **see current trails**
