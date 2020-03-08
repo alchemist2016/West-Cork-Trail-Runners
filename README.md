@@ -58,7 +58,7 @@ There is much to say about this topic but my priorities were to present skills i
   - Adding new Members into DB 
 
 <p align="center">
-  <img src="https://github.com/alchemist2016/Milestone3/blob/master/static/img/addmember.PNG?raw=true" width="300" height="150" alt="Add new members">
+  <img src="https://github.com/alchemist2016/Milestone3/blob/master/static/img/addmember.PNG?raw=true" width="400" height="600" alt="Add new members">
 </p>
 
 * **User can Add New Trail**
