@@ -1,0 +1,8 @@
+[{
+    "_id": "<objectId>",
+    "first_name": "<string>",
+    "last_name": "<string>",
+    "running_experience": "<string>",
+    "email": "<string>",
+    "date_joined": "<string>"
+}]

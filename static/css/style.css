@@ -9,6 +9,9 @@ body {
     width: 100%;
     height: 100%;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 /*--Formatting for Edit and Delete Buttons in Forms--*/
 .btn-small {

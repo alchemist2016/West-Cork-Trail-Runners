@@ -1,0 +1,9 @@
+[{
+    "_id": "<objectId>",
+    "name_of_trail": "<string>",
+    "start": "<string>",
+    "end": "<string>",
+    "description": "<string>",
+    "dificulty": "<string>",
+    "length": "<string>"
+}]
